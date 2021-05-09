@@ -1,0 +1,78 @@
+#mainContain {
+    margin: 0 auto;
+    margin-top: 120px;
+    width: 960px;
+    min-width: 960px;
+    // // 
+    display: block;
+    .leftEssayContain {
+        width: 700px;
+        background-color: #fff;
+        border-radius: 4px;
+        float: left;
+        .eassayContainHeader {
+            height: 45px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding: 0 12px;
+            border-bottom: 1px solid hsla(0, 0%, 59.2%, .1);
+
+            ul {
+                display: flex;
+
+                li {
+                    font-size: 14px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 57px;
+                    height: 14px;
+                    cursor: pointer;
+                    color: #909090;
+                    border-right: 1px solid hsla(0, 0%, 59.2%, .2);
+                }
+
+                li:nth-child(3) {
+                    border: none;
+                }
+
+                li:hover {
+                    color: #007fff;
+                }
+
+                .active {
+                    color: #007fff;
+                }
+            }
+        }
+
+        .essayListContain {
+            .essayList {
+                li {
+                    cursor: pointer;
+                }
+                li:hover{
+                    background-color: #fcfcfc;
+                }
+            }
+        }
+    }
+    .mainRightContain{
+        width: 240px;
+        height: 1000px;
+        float: right;
+        li{
+            padding: 16px;
+            background-color: #fff;
+            border-radius: 3px;
+            margin-bottom: 15px;
+        }
+        .advertisement{
+            padding: 0;
+        }
+        .rightLoginContain{
+
+        }
+    }
+}

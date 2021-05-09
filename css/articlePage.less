@@ -1,0 +1,370 @@
+#articlePage {
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 80px;
+    display: none;
+
+    .leftArticleContain {
+        width: 652px;
+        padding: 0 24px;
+        background-color: #fff;
+
+        .header {
+            padding: 24px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .authorHead {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                margin-right: 10px;
+                overflow: hidden;
+
+                .detail-authorHeadImg {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .authorInfo {
+                flex: 1;
+
+                .time {
+                    color: #909090;
+                }
+            }
+
+            .attentionBtn {
+                width: 55px;
+                height: 40px;
+                display: flex;
+                align-items: flex-end;
+
+                .articleSubBtn {
+                    width: 100%;
+                    height: 26px;
+                    font-size: 13px;
+                    border-radius: 3px;
+                    transition: all .5s;
+                }
+                .isSub{
+                    background-color: #6cbd45;
+                    color: white;
+                }
+                .yetSub{
+                    border: 1px solid #6cbd45;
+                    color: #6cbd45;
+                }
+            }
+        }
+
+        #comment {
+            position: relative;
+            border-top: 1px solid #ebebeb;
+            padding-top: 16px;
+            padding-bottom: 84px;
+            #toComment{
+                position: absolute;
+                height: 1px;
+                width: 100%;
+                top: -61px;
+            }
+            .commentAllInputContain {
+                background-color: #f4f5f5;
+                display: flex;
+                flex-direction: column;
+                padding: 14px;
+                border-radius: 3px;
+                .authorHeaderImg{
+                    width: 32px;
+                    height: 32px;
+                    margin-right: 12px;
+                    border-radius: 50%;
+                }
+
+                .inputContain {
+                    display: flex;
+                    flex: 1;
+                    padding: 7.2px;
+                    height: auto;
+                    border-radius: 5px;
+
+                    .allCommentInput {
+                        padding: 7.2px 12px;
+                        overflow: hidden;
+                        height: 14px;
+                        border-radius: 4px;
+                        width: 100%;
+                        height: auto;
+                        resize: none;
+                        outline: none;
+                        border: none;
+                    }
+
+                    .allCommentInput::-webkit-scrollbar {
+                        width: 0;
+                    }
+                }
+
+                .buttonAction {
+
+                    .actionBox {
+                        display: none;
+                        align-items: center;
+                        position: relative;
+                        .sendCommentBtn {
+                            padding: 6px 15.6px;
+                            font-size: 14px;
+                            color: #fff;
+                            background-color: #027fff;
+                            border-radius: 2px;
+                            opacity: 0.5;
+                            cursor: default;
+                        }
+                        .biaoqingBtn{
+                            cursor: pointer;
+                            display: block;
+                            margin-left: 10px;
+                            width: auto;
+                            height: 100%;
+                            color: #027fff;
+                            font-size: 15px;
+                        }
+                        .biaoqingBox{
+                            display: none;
+                            position: absolute;
+                            bottom: 32px;
+                            left: 0;
+                            width: 100%;
+                            height: 150px;
+                            background-color: #fff;
+                            padding: 20px;
+                            li{
+                                width: 16px;
+                                height: 16px;
+                                margin: 5px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.articleRightNav {
+    position: fixed;
+    top: 192px;
+    margin-left: -84px;
+    width: 36px;
+
+    .item {
+        cursor: pointer;
+        width: 36px;
+        height: 36px;
+        margin-bottom: 9px;
+        border-radius: 50%;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .acticleCommentNum,.acticleZanNum{
+            position: absolute;
+            background-color: #b2bac2;
+            padding: 1.2px 2.8px; 
+            top: 0;
+            left: 75%;
+            display: inline-block;
+            height: 11px;
+            line-height: 11px;
+            border-radius: 8.4px;
+            font-size: 10px;
+            color: white;
+        }
+        a {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            opacity: 0;
+        }
+
+        i {
+            color: #b2bac2;
+        }
+    }
+    .item.isThmbUp{
+        color: green;
+        i{
+            color: green;
+        }
+        span{
+            background-color: green;
+        }
+    }
+    .item.isDislike{
+        color: red;
+        i{
+            color: red;
+        }
+    }
+    .cut {
+        color: #909090;
+        margin: 30px 0 12px 0;
+        font-size: 12px;
+        text-align: center;
+    }
+}
+// 评论列表
+.commentList {
+    margin-left: 78px;
+    margin-right: 20px;
+
+    .commentItem {
+        margin-top: 16px;
+
+        .topComment {
+
+            display: flex;
+            justify-content: space-between;
+
+            .commentLeft {
+                width: 32px;
+
+                .commentorHeadImg {
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+
+            .commentRight {
+                flex: 1;
+                margin-left: 10px;
+                border-bottom: 1px solid #f1f1f1;
+
+                .commentorName {
+                    font-size: 13px;
+                    font-weight: 600;
+                }
+
+                .commentText {
+                    color: #909090;
+                    margin: 5px 0;
+                }
+
+                .buttonAction {
+                    display: flex;
+                    margin-bottom: 10px;
+                    justify-content: space-between;
+                    cursor: pointer;
+                    .time {
+                        font-size: 13px;
+                        color: #909090;
+                        margin-right: 4px;
+                    }
+                    .delete{
+                        cursor: pointer;
+                        font-size: 12px;
+                        flex: 1;
+                        color: #bebebe;
+                    }
+                    .commentAction {
+                        width: 140px;
+                        display: flex;
+                        justify-content: space-around;
+
+                        .none {
+                            color: #bebebe;
+                        }
+
+                        div {
+                            font-size: 13px;
+                        }
+
+                        i {
+                            margin: 5px;
+                        }
+
+                        .active {
+                            color: green;
+                        }
+                        .dislike{
+                            color: red;
+                        }
+                    }
+                }
+            }
+        }
+        // 回复别人的评论框
+        .itemCommentInputContain {
+            display: none;
+            margin: 10px 0;
+            background-color: #fafbfc;
+
+            .inputContain {
+                display: flex;
+                flex: 1;
+                padding: 7.2px;
+                height: auto;
+                border-radius: 5px;
+
+                .commentInput {
+                    padding: 7.2px 12px;
+                    overflow: hidden;
+                    height: 14px;
+                    border-radius: 4px;
+                    width: 100%;
+                    height: auto;
+                    resize: none;
+                    outline: none;
+                    border: 1px solid #027fff;
+                }
+
+                .commentInput::-webkit-scrollbar {
+                    width: 0;
+                }
+            }
+
+            .action_box {
+                .sendCommentOtherBtn {
+                    padding: 6px 15.6px;
+                    font-size: 14px;
+                    color: #fff;
+                    background-color: #027fff;
+                    border-radius: 2px;
+                    opacity: 0.5;
+                    cursor: default;
+                }
+            }
+        }
+        // 回复的内容
+        .commentOtherList{
+            background-color: #fafbfc;
+            padding: 12px;
+            position: relative;
+            .itemCommentInputContain{
+                background-color: #fff;
+            }
+            .reGetMore{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 15px;
+                width: 100%;
+                background-color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                span{
+                    font-size: 11px;
+                    color: #ccc;
+                }
+            }
+        }
+    }
+}

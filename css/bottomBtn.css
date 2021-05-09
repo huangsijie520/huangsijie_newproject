@@ -1,0 +1,18 @@
+.bottomChoose {
+  position: fixed;
+  bottom: 0;
+  right: 40px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.bottomChoose button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #fff;
+}
+.bottomChoose .toTopBtn {
+  transform: rotate(180deg);
+}

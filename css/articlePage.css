@@ -1,0 +1,330 @@
+#articlePage {
+  width: 960px;
+  margin: 0 auto;
+  margin-top: 80px;
+  display: none;
+}
+#articlePage .leftArticleContain {
+  width: 652px;
+  padding: 0 24px;
+  background-color: #fff;
+}
+#articlePage .leftArticleContain .header {
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#articlePage .leftArticleContain .header .authorHead {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  overflow: hidden;
+}
+#articlePage .leftArticleContain .header .authorHead .detail-authorHeadImg {
+  width: 100%;
+  height: 100%;
+}
+#articlePage .leftArticleContain .header .authorInfo {
+  flex: 1;
+}
+#articlePage .leftArticleContain .header .authorInfo .time {
+  color: #909090;
+}
+#articlePage .leftArticleContain .header .attentionBtn {
+  width: 55px;
+  height: 40px;
+  display: flex;
+  align-items: flex-end;
+}
+#articlePage .leftArticleContain .header .attentionBtn .articleSubBtn {
+  width: 100%;
+  height: 26px;
+  font-size: 13px;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+#articlePage .leftArticleContain .header .attentionBtn .isSub {
+  background-color: #6cbd45;
+  color: white;
+}
+#articlePage .leftArticleContain .header .attentionBtn .yetSub {
+  border: 1px solid #6cbd45;
+  color: #6cbd45;
+}
+#articlePage .leftArticleContain #comment {
+  position: relative;
+  border-top: 1px solid #ebebeb;
+  padding-top: 16px;
+  padding-bottom: 84px;
+}
+#articlePage .leftArticleContain #comment #toComment {
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  top: -61px;
+}
+#articlePage .leftArticleContain #comment .commentAllInputContain {
+  background-color: #f4f5f5;
+  display: flex;
+  flex-direction: column;
+  padding: 14px;
+  border-radius: 3px;
+}
+#articlePage .leftArticleContain #comment .commentAllInputContain .authorHeaderImg {
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+  border-radius: 50%;
+}
+#articlePage .leftArticleContain #comment .commentAllInputContain .inputContain {
+  display: flex;
+  flex: 1;
+  padding: 7.2px;
+  height: auto;
+  border-radius: 5px;
+}
+#articlePage .leftArticleContain #comment .commentAllInputContain .inputContain .allCommentInput {
+  padding: 7.2px 12px;
+  overflow: hidden;
+  height: 14px;
+  border-radius: 4px;
+  width: 100%;
+  height: auto;
+  resize: none;
+  outline: none;
+  border: none;
+}
+#articlePage .leftArticleContain #comment .commentAllInputContain .inputContain .allCommentInput::-webkit-scrollbar {
+  width: 0;
+}
+#articlePage .leftArticleContain #comment .commentAllInputContain .buttonAction .actionBox {
+  display: none;
+  align-items: center;
+  position: relative;
+}
+#articlePage .leftArticleContain #comment .commentAllInputContain .buttonAction .actionBox .sendCommentBtn {
+  padding: 6px 15.6px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #027fff;
+  border-radius: 2px;
+  opacity: 0.5;
+  cursor: default;
+}
+#articlePage .leftArticleContain #comment .commentAllInputContain .buttonAction .actionBox .biaoqingBtn {
+  cursor: pointer;
+  display: block;
+  margin-left: 10px;
+  width: auto;
+  height: 100%;
+  color: #027fff;
+  font-size: 15px;
+}
+#articlePage .leftArticleContain #comment .commentAllInputContain .buttonAction .actionBox .biaoqingBox {
+  display: none;
+  position: absolute;
+  bottom: 32px;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background-color: #fff;
+  padding: 20px;
+}
+#articlePage .leftArticleContain #comment .commentAllInputContain .buttonAction .actionBox .biaoqingBox li {
+  width: 16px;
+  height: 16px;
+  margin: 5px;
+  cursor: pointer;
+}
+.articleRightNav {
+  position: fixed;
+  top: 192px;
+  margin-left: -84px;
+  width: 36px;
+}
+.articleRightNav .item {
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 9px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.articleRightNav .item .acticleCommentNum,
+.articleRightNav .item .acticleZanNum {
+  position: absolute;
+  background-color: #b2bac2;
+  padding: 1.2px 2.8px;
+  top: 0;
+  left: 75%;
+  display: inline-block;
+  height: 11px;
+  line-height: 11px;
+  border-radius: 8.4px;
+  font-size: 10px;
+  color: white;
+}
+.articleRightNav .item a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  opacity: 0;
+}
+.articleRightNav .item i {
+  color: #b2bac2;
+}
+.articleRightNav .item.isThmbUp {
+  color: green;
+}
+.articleRightNav .item.isThmbUp i {
+  color: green;
+}
+.articleRightNav .item.isThmbUp span {
+  background-color: green;
+}
+.articleRightNav .item.isDislike {
+  color: red;
+}
+.articleRightNav .item.isDislike i {
+  color: red;
+}
+.articleRightNav .cut {
+  color: #909090;
+  margin: 30px 0 12px 0;
+  font-size: 12px;
+  text-align: center;
+}
+.commentList {
+  margin-left: 78px;
+  margin-right: 20px;
+}
+.commentList .commentItem {
+  margin-top: 16px;
+}
+.commentList .commentItem .topComment {
+  display: flex;
+  justify-content: space-between;
+}
+.commentList .commentItem .topComment .commentLeft {
+  width: 32px;
+}
+.commentList .commentItem .topComment .commentLeft .commentorHeadImg {
+  width: 32px;
+  height: 32px;
+}
+.commentList .commentItem .topComment .commentRight {
+  flex: 1;
+  margin-left: 10px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.commentList .commentItem .topComment .commentRight .commentorName {
+  font-size: 13px;
+  font-weight: 600;
+}
+.commentList .commentItem .topComment .commentRight .commentText {
+  color: #909090;
+  margin: 5px 0;
+}
+.commentList .commentItem .topComment .commentRight .buttonAction {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.commentList .commentItem .topComment .commentRight .buttonAction .time {
+  font-size: 13px;
+  color: #909090;
+  margin-right: 4px;
+}
+.commentList .commentItem .topComment .commentRight .buttonAction .delete {
+  cursor: pointer;
+  font-size: 12px;
+  flex: 1;
+  color: #bebebe;
+}
+.commentList .commentItem .topComment .commentRight .buttonAction .commentAction {
+  width: 140px;
+  display: flex;
+  justify-content: space-around;
+}
+.commentList .commentItem .topComment .commentRight .buttonAction .commentAction .none {
+  color: #bebebe;
+}
+.commentList .commentItem .topComment .commentRight .buttonAction .commentAction div {
+  font-size: 13px;
+}
+.commentList .commentItem .topComment .commentRight .buttonAction .commentAction i {
+  margin: 5px;
+}
+.commentList .commentItem .topComment .commentRight .buttonAction .commentAction .active {
+  color: green;
+}
+.commentList .commentItem .topComment .commentRight .buttonAction .commentAction .dislike {
+  color: red;
+}
+.commentList .commentItem .itemCommentInputContain {
+  display: none;
+  margin: 10px 0;
+  background-color: #fafbfc;
+}
+.commentList .commentItem .itemCommentInputContain .inputContain {
+  display: flex;
+  flex: 1;
+  padding: 7.2px;
+  height: auto;
+  border-radius: 5px;
+}
+.commentList .commentItem .itemCommentInputContain .inputContain .commentInput {
+  padding: 7.2px 12px;
+  overflow: hidden;
+  height: 14px;
+  border-radius: 4px;
+  width: 100%;
+  height: auto;
+  resize: none;
+  outline: none;
+  border: 1px solid #027fff;
+}
+.commentList .commentItem .itemCommentInputContain .inputContain .commentInput::-webkit-scrollbar {
+  width: 0;
+}
+.commentList .commentItem .itemCommentInputContain .action_box .sendCommentOtherBtn {
+  padding: 6px 15.6px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #027fff;
+  border-radius: 2px;
+  opacity: 0.5;
+  cursor: default;
+}
+.commentList .commentItem .commentOtherList {
+  background-color: #fafbfc;
+  padding: 12px;
+  position: relative;
+}
+.commentList .commentItem .commentOtherList .itemCommentInputContain {
+  background-color: #fff;
+}
+.commentList .commentItem .commentOtherList .reGetMore {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 15px;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.commentList .commentItem .commentOtherList .reGetMore span {
+  font-size: 11px;
+  color: #ccc;
+}

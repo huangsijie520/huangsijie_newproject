@@ -1,0 +1,64 @@
+#mainContain {
+  margin: 0 auto;
+  margin-top: 120px;
+  width: 960px;
+  min-width: 960px;
+  display: block;
+}
+#mainContain .leftEssayContain {
+  width: 700px;
+  background-color: #fff;
+  border-radius: 4px;
+  float: left;
+}
+#mainContain .leftEssayContain .eassayContainHeader {
+  height: 45px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 12px;
+  border-bottom: 1px solid hsla(0, 0%, 59.2%, 0.1);
+}
+#mainContain .leftEssayContain .eassayContainHeader ul {
+  display: flex;
+}
+#mainContain .leftEssayContain .eassayContainHeader ul li {
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 57px;
+  height: 14px;
+  cursor: pointer;
+  color: #909090;
+  border-right: 1px solid hsla(0, 0%, 59.2%, 0.2);
+}
+#mainContain .leftEssayContain .eassayContainHeader ul li:nth-child(3) {
+  border: none;
+}
+#mainContain .leftEssayContain .eassayContainHeader ul li:hover {
+  color: #007fff;
+}
+#mainContain .leftEssayContain .eassayContainHeader ul .active {
+  color: #007fff;
+}
+#mainContain .leftEssayContain .essayListContain .essayList li {
+  cursor: pointer;
+}
+#mainContain .leftEssayContain .essayListContain .essayList li:hover {
+  background-color: #fcfcfc;
+}
+#mainContain .mainRightContain {
+  width: 240px;
+  height: 1000px;
+  float: right;
+}
+#mainContain .mainRightContain li {
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+#mainContain .mainRightContain .advertisement {
+  padding: 0;
+}

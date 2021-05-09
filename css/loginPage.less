@@ -1,0 +1,130 @@
+#loginPage {
+    z-index: 2000;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    // display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .3);
+
+    .centerLoginPage {
+        /* 为了放置熊猫 */
+        position: relative;
+        padding: 24px;
+        width: 318px;
+        max-width: 100%;
+        font-size: 20px;
+        background-color: #fff;
+        border-radius: 2px;
+        box-sizing: border-box;
+
+        .imgContain {
+            position: absolute;
+            top: -80px;
+            left: calc(50% - 60px);
+        }
+
+        .imgContain img {
+            width: 120px;
+            height: auto;
+        }
+    }
+    .loginHeader{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+        .title{
+            font-size: 1.5px*12;
+            font-weight: 600;
+        }
+        .close{
+            width: auto;
+            height: auto;
+            cursor: pointer;
+            color: #ccc;
+        }
+        .close:hover{
+            color: #000;
+        }
+    }
+    .inputGroup{
+        width: 100%;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 18px;
+        .phoneContain{
+            width: 100%;
+            height: 37px;
+            padding: 0 10px;
+            border-radius: 2px;
+            border: 1px solid #d9d9d9;
+            display: flex;
+
+            .regionInputContain{
+                flex: 1;
+                padding: 10px 0;
+                display: flex;
+                .regionInput{
+                    .bottomArrow{}
+                }
+            }
+            .regionInputContain::before{
+                content: "+";
+                position: relative;
+                top: -7px;
+            }
+            .phoneInputContain{
+                flex: 3;
+                padding: 10px;
+                .phoneInput{
+
+                }
+            }
+		}
+        .passwordContain{
+            border: 1px solid #d9d9d9;
+            height: 37px;
+            padding: 0 10px;
+            border-radius: 2px;
+            display: flex;
+            justify-content: space-between;
+            .codeInput{
+                // width: 180px;
+            }
+            .getCode{
+                color: rgb(6, 112, 250);
+                width: 100px;
+            }
+        }
+    }
+    .goLogin{
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        line-height: 30px;
+        color: #fff;
+        background-color: #007fff;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+    .otherChoose{
+        margin-top: 12px;
+        font-size: 18px;
+    }
+    .agreement{
+        margin-top: 20px;
+        font-size: 15px;
+        color: rgb(118, 118, 118);
+    }
+    .blueA{
+        color: #007fff;
+        cursor: pointer;
+    }
+}
